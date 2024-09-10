@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/** @type {import('tailwindcss').Config} */
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(calc(-100% + 18rem)); /* Adjust this value to control the amount of scrolling */
+    }
+  }
+  
+  .auto-scroll {
+    animation: scroll 10s linear infinite;
+  }
+  
