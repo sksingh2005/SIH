@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-image': "url('/images/INDIA.jpeg')",
+        'custom-bg': "url('/images/BG.jpg')",
+        'seller-bg':"url('/images/BG-1.jpg')"
       },
     },
   },

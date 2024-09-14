@@ -10,7 +10,7 @@ export function Signup() {
 
     return (
         <div className="bg-gray-300 flex items-center min-h-screen">
-            <div className="w-[90%] sm:w-[75%] md:w-[50%] lg:w-[30%] bg-custom-bg bg-cover bg-center m-auto rounded-lg pt-2">
+            <div className="w-[90%] sm:w-[75%] md:w-[50%] lg:w-[30%]  m-auto rounded-lg pt-2">
                 <div className="flex flex-col justify-center px-4 text-center pt-5">
                     <p className="font-bold text-xl sm:text-2xl pb-2">Sign Up as Seller</p>
                     <p className="text-gray-500">Enter your information to create an account</p>
@@ -33,6 +33,13 @@ export function Signup() {
                     <p className="pt-2">Phone Number</p>
                     <input 
                         type="email" 
+                        placeholder=" " 
+                        onChange={(e) => setUsername(e.target.value)} 
+                        className="border rounded border-slate-500 pb-1 pt-1 w-full" 
+                    />
+                    <p className="pt-2">Adhar Card </p>
+                    <input 
+                        type="file" 
                         placeholder=" " 
                         onChange={(e) => setUsername(e.target.value)} 
                         className="border rounded border-slate-500 pb-1 pt-1 w-full" 

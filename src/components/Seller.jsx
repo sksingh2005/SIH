@@ -34,7 +34,21 @@ export function SellerProfile() {
       <h1 className="text-2xl font-semibold">Seller Profile</h1>
 
       {/* Seller Information */}
-      <div className="mt-4 border p-4 rounded-lg shadow-md">
+      <div className="mt-4 border  p-4 rounded-lg shadow-md">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-10 h-10"
+        >
+        <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 9A3.75 3.75 0 1112 5.25 3.75 3.75 0 0115.75 9zM4.5 18.75a8.25 8.25 0 0115 0"
+        />
+            </svg>
         <h2 className="text-xl font-semibold">Profile Information</h2>
         <p className="mt-2">Name: {seller.name}</p>
         <p>Email: {seller.email}</p>
@@ -96,12 +110,20 @@ export function SellerProfile() {
             />
           </div>
           <div className="flex flex-col mb-4">
+            <div className="flex space-2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-current" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 20s6-5.686 6-10a6 6 0 10-12 0c0 4.314 6 10 6 10zm0-13a3 3 0 110 6 3 3 0 010-6z" clipRule="evenodd" />
+            </svg>
             <label className="mb-2 font-semibold">Location</label>
+            </div>
+            
+            
+
             <input
-              type="number"
+              type="text"
               value={newItem.location}
               onChange={(e) =>
-                setNewItem({ ...newItem, quantity: e.target.value })
+                setNewItem({ ...newItem, location: e.target.value })
               }
               className="border p-2 rounded"
               placeholder="Enter location"
